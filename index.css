@@ -80,7 +80,7 @@ img{
     height: 2.1rem;
 }
 #Logo2 a{
-    margin-top: 1rem;
+    margin: auto;
 } 
 #Logo2 a:hover, #Logo3 a:hover{
     color: black;
@@ -146,6 +146,7 @@ img{
 }
 #Logo2-sub-a{
     width: 50%;
+    display: flex;
 }
 #footer{
     background-color: hsl(192, 100%, 9%);
@@ -275,7 +276,7 @@ img{
         text-align: left !important;
     }
     #Logo2 a{
-        margin-top: 0;
+        margin: initial;
     }
     #Logo-a{
         width: 18%;
