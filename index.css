@@ -183,7 +183,7 @@ img{
     text-decoration: none;
     color: inherit;
 }
-@media all and (min-width: 400px){
+@media all and (min-width: 500px){
     #header{
         background:hsl(193, 100%, 96%) url("images/bg-hero-desktop.svg");
         background-size: 100% 100%;
@@ -233,7 +233,7 @@ img{
     }
     .main-sub-sub-sub-img img{
         margin: 0;
-        /* height: 100%;  */
+        min-height: 100%; 
         /* width: 38%; */
     }
     /* .right{
