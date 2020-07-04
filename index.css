@@ -1,0 +1,293 @@
+html {
+    font-size: 1rem;
+}
+body{
+    background-color: #fff;
+    position: relative;
+}
+#header{
+    background:hsl(193, 100%, 96%) url("images/bg-hero-mobile.svg");
+    overflow: auto;
+    margin-bottom: 3.3rem;
+}
+img{
+    max-width: 100%;
+}
+
+#Logo, #Logo2{
+    display: flex;
+    margin: 1.6rem 1.1rem 4rem;
+}
+#Logo{
+    height: 1.4rem;
+}
+#Logo img{
+    display: inline-block;
+    height: 80%;
+    margin-right: auto;
+}
+#Logo a{
+    display: inline-block;
+    box-sizing: border-box;
+    background-color: #fff;
+    text-decoration: none;
+    color: black;
+    padding: 0.2rem;
+    border-radius: 1rem;
+    width: 6.2rem;
+    height: 1.4rem;
+    text-align: center;
+    line-height: 1.1rem;
+    font-family: sans-serif; /*add one to conform with the style guidelines*/
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+#Logo a:hover{
+    background-color: black;
+    color: #fff;
+}
+#Logo2 {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+#Logo2 p:first-child{
+    font-weight: bolder;
+    font-family: sans-serif;
+    font-size: 1.6rem;
+    text-align: center;
+    line-height: 2.2rem;
+    margin-bottom: 2rem;
+}
+#Logo2 p:nth-child(2){
+    text-align: center;
+    line-height: 1.5rem;
+    width: 75%;
+    margin-bottom: 2.1rem;
+}
+#Logo2 a, #Logo3 a {
+    display: inline-block;
+    background-color: hsl(322, 100%, 66%);
+    color: #fff;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-size: 0.7rem;
+    font-weight: 600;
+    font-family: sans-serif;
+    text-align: center;
+    border-radius: 1rem;
+    padding: 0.7rem;
+    height: 2.1rem;
+}
+#Logo2 a{
+    margin-top: 1rem;
+} 
+#Logo2 a:hover, #Logo3 a:hover{
+    color: black;
+}
+#Logo2-sub{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#Logo2 img{
+    margin: 3.1rem 1.1rem 0;
+    max-width: 91%;
+}
+.main-sub{
+    width: 90%;
+    margin: 2.4rem auto;
+    border-radius: 0.6rem;
+    box-shadow: 0 0 0.5rem 0.1rem #d9d9d9;
+    display: flex;
+    flex-direction: column;
+}
+.main-sub-sub{
+    margin: 2.4rem;
+}
+.main-sub-sub img{
+    margin-bottom: 2rem;
+}
+.main-sub-sub p:first-of-type, #Logo3-sub p{
+    font-weight: bolder;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 1.4rem;
+    margin: 1.4rem 0;
+    width: 100%;
+}
+.main-sub-sub p:last-child{
+    opacity: 0.7;
+    color: #808080;
+    text-align: center;
+}
+#Logo3{
+    width: 90%;
+    margin: 2.4rem auto 0;
+    border-radius: 0.6rem;
+    box-shadow: 0 0 0.5rem 0.1rem #d9d9d9;
+    display: flex;
+    position: relative;
+    top: 5.3rem;
+    z-index: 1; 
+    background-color: white;
+}
+#Logo3-sub{
+    margin: 2.4rem auto;
+    
+}
+#Logo3-sub p{
+    font-size: 1rem;
+}
+#Logo3-sub a{
+    width: 10rem;
+    display: block;
+    margin: 1.4rem auto;
+}
+#Logo2-sub-a{
+    width: 50%;
+}
+#footer{
+    background-color: hsl(192, 100%, 9%);
+    padding: 10rem 0 2.8rem 1.3rem;
+    box-sizing: border-box;
+    /* width: 100%; */
+    color: white;
+    font-family: sans-serif;
+}
+#footer div > img{
+    width: 48%;
+    margin-bottom: 2rem;
+}
+#footer p{
+    margin-bottom: 1.5rem;   
+}
+#footer span{
+    display: inline-block;
+    box-sizing: border-box;
+    width: 90%;
+    font-size: 1.06rem;
+    padding-left: 7%;
+    line-height: 1.4rem;
+    vertical-align: top;
+}
+#tel span{
+    width: 85%;
+    padding-left:5%;
+}
+#footer li{
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+#footer li a{
+    text-decoration: none;
+    color: inherit;
+}
+@media all and (min-width: 400px){
+    #header{
+        background:hsl(193, 100%, 96%) url("images/bg-hero-desktop.svg");
+        background-size: 100% 100%;
+    }
+    .main-sub-sub{
+        display: flex;
+        flex-direction: row-reverse;
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 2rem 1.5rem 2rem 3rem;
+        justify-content: space-between;
+    }
+    .main-sub:nth-child(2) .main-sub-sub{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .main-sub-sub p:first-of-type{
+        text-align: left;
+        margin: 0;
+        font-size: 1.5rem;
+        margin-bottom: 0.7rem;
+        word-wrap: break-word;
+    }
+    .main-sub-sub p:last-child {
+        text-align: left;
+        font-weight: 500;
+        font-family: sans-serif;
+        line-height: 1.5rem;
+        /* width: 70%; */
+    }
+    .main-sub-sub-sub-left{
+        align-self: center;
+        justify-content: space-between;
+        /* flex-basis: 150%; */
+    }
+    .main-sub-sub-sub-right, .main-sub-sub-sub-left{
+        margin-right: 0;
+        width: 44%;
+        align-self: center;
+    }
+    .main-sub-sub-sub-right p:last-child{
+        width: inherit;
+    }
+    .main-sub-sub-sub-img{
+        width: 30%;
+    }
+    .main-sub-sub-sub-img img{
+        margin: 0;
+        /* height: 100%;  */
+        /* width: 38%; */
+    }
+    /* .right{
+        width: 38%;
+    } */
+    #Logo{
+        height: 100%;
+        justify-content: space-between;
+        display: flex;
+    }
+    #header a{
+        display: block;
+        /* margin: auto auto; */
+        padding: 0.78rem;
+        width: initial;
+        line-height: initial;
+        text-align: initial;
+        height: initial;
+        text-align: center;
+    }
+    #Logo img{
+        display: initial;
+        height: initial;
+        margin-right: initial;
+    }
+    #Logo2{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #Logo2-sub{
+        width: 39%;
+        align-items: initial;
+    }
+    #Logo2-img{
+        width: 51%;
+    }
+    #Logo2-sub p{
+        text-align: left !important;
+    }
+    #Logo2 a{
+        margin-top: 0;
+    }
+    #Logo-a{
+        width: 18%;
+    }
+    #Logo2 p:nth-child(2){
+        margin-bottom: 1.5rem;
+        width: initial;
+    }
+    #Logo2 p:first-child{
+        font-size: 2.2rem;
+        width: initial;
+        margin-bottom: 1rem;
+        word-wrap: break-word;
+    }
+}
