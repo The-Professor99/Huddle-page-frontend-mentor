@@ -7,7 +7,7 @@ body{
 }
 #header{
     background:hsl(193, 100%, 96%) url("images/bg-hero-mobile.svg");
-    overflow: auto;
+    overflow: hidden;
     margin-bottom: 3.3rem;
 }
 img{
@@ -144,17 +144,18 @@ img{
     display: block;
     margin: 1.4rem auto;
 }
-#Logo2-sub-a{
+/* #Logo2-sub-a{
     width: 50%;
     display: flex;
-}
+} */
 #footer{
     background-color: hsl(192, 100%, 9%);
-    padding: 10rem 0 2.8rem 1.3rem;
+    padding: 10rem 0 0 1.3rem;
     box-sizing: border-box;
     /* width: 100%; */
     color: white;
     font-family: sans-serif;
+    overflow: hidden;
 }
 #footer div > img{
     width: 48%;
@@ -183,6 +184,33 @@ img{
 #footer li a{
     text-decoration: none;
     color: inherit;
+}
+#social-icons{
+    width: max-content;
+    margin: 5rem auto 2rem;
+}
+#social-icons a{
+    display: inline-block;
+    border-radius: 50%;
+    color: white;
+    border: 1px white solid;
+    margin-right: 0.5rem;
+}
+#social-icons a:hover{
+    color: black;
+    border-color: black;
+}
+.fab{
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 0.7rem;
+    font-size: 1.6rem;
+    width: 2.8rem;
+    height: 2.8rem;
+    text-align: center;
+}
+#copyright{
+    text-align: center;
 }
 @media all and (min-width: 500px){
     #header{
@@ -278,6 +306,9 @@ img{
     #Logo2 a{
         margin: initial;
     }
+    #Logo3 a{
+        border-radius: 2rem;
+    }
     #Logo-a{
         width: 18%;
     }
@@ -290,5 +321,51 @@ img{
         width: initial;
         margin-bottom: 1rem;
         word-wrap: break-word;
+    }
+    #Logo3{
+        width: 60%;
+    }
+    #Logo3-sub p{
+        font-size: 1.5rem;
+    }
+    #Logo3-sub a{
+        width: 60%;
+        height: 2.5rem;
+        line-height: 1.1rem;
+        font-size: 0.8rem;
+    }
+    #footer{
+        padding-right: 2rem;
+    }
+    
+}
+@media all and (min-width: 800px){
+    #Logo2 a{
+        border-radius: 2rem;
+    }
+    #footer-sub{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #social-icons{
+        display: flex;
+        margin: 0;
+        width: max-content;
+        height: max-content;
+    }
+    .eight-hundred{
+        margin-top: 4rem !important;
+    }
+    .fab{
+        width: 1.8rem;
+        height: 1.8rem;
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+    #copyright{
+        font-size: 0.5rem;
+        width: max-content;
+        margin-left: auto;
+        margin-right: 1.6rem;
     }
 }
