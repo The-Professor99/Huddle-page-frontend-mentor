@@ -13,6 +13,9 @@ body{
 img{
     max-width: 100%;
 }
+a{
+    cursor: pointer;
+}
 
 #Logo, #Logo2{
     display: flex;
