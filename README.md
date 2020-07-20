@@ -1,4 +1,4 @@
-# Huddle Page Front End Mentor - A [Frontend mentor](https:www.frontendmentor.io) challenge
+# Huddle Page Front End Mentor - A [Frontend mentor](https://www.frontendmentor.io) challenge
 
 This project aims to build a web page similar to the designs in the [design folder](./design).
 
